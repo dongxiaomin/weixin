@@ -1,0 +1,549 @@
+@charset "UTF-8";
+body, ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #6B6B6B;
+}
+
+body {
+  font-family: "微软雅黑","Arial";
+  font-size: 14px;
+}
+
+@font-face {
+  font-family: "iconfont";
+  src: url("../font/iconfont.eot?t=1465214703");
+  /* IE9*/
+  src: url("../font/iconfont.eot?t=1465214703#iefix") format("embedded-opentype"), url("../font/iconfont.woff?t=1465214703") format("woff"), url("../font/iconfont.ttf?t=1465214703") format("truetype"), url("../font/iconfont.svg?t=1465214703#iconfont") format("svg");
+  /* iOS 4.1- */
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 77.29469px;
+  }
+}
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 86.95652px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 90.57971px;
+  }
+}
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 100px;
+  }
+}
+
+@media screen and (min-width: 384px) {
+  html {
+    font-size: 92.75362px;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 99.51691px;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 154.58937px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 185.50725px;
+  }
+}
+
+/*开始*/
+.header {
+  z-index: 9999999;
+  height: 0.44rem;
+  width: 100%;
+  background: #393A3F;
+  padding: 0 0.15rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.header .weixin {
+  margin: 0;
+  float: left;
+  line-height: 0.44rem;
+  color: #fff;
+  height: 0.44rem;
+}
+
+.header .weixin2 {
+  height: 0.44rem;
+  width: auto;
+  float: right;
+}
+
+.header .weixin2 li {
+  float: left;
+}
+
+.header .weixin2 .search, .header .weixin2 .add {
+  width: 0.44rem;
+  height: 0.44rem;
+  line-height: 0.44rem;
+  text-align: center;
+}
+
+.header .weixin2 .add:before {
+  content: "\e673";
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: "iconfont";
+}
+
+.header .weixin2 .search:before {
+  content: "\343b";
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-family: "iconfont";
+}
+
+/*结尾*/
+.footer {
+  z-index: 999999;
+}
+
+.footer ul {
+  border-top: 0.01rem solid #ccc;
+  background: #FCFCFC;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  height: 50px;
+}
+
+.footer ul li {
+  padding-top: 8px;
+  float: left;
+  width: 25%;
+  height: 50px;
+  bottom: 10px;
+}
+
+.footer ul li a {
+  display: block;
+  font-size: 0.15em;
+  width: auto;
+  color: #B8B8B8;
+}
+
+.footer ul .weixin1::after {
+  content: "\e618";
+  font-family: "iconfont";
+}
+
+.footer ul .tongxunlu1::after {
+  content: "\e621";
+  font-family: "iconfont";
+}
+
+.footer ul .faxian1::after {
+  content: "\e608";
+  font-family: "iconfont";
+}
+
+.footer ul .wo1::after {
+  content: "\e60f";
+  font-family: "iconfont";
+}
+
+.footer .active a {
+  color: #45C01A;
+}
+
+.footer .active span {
+  color: #45C01A;
+}
+
+/*微信*/
+.weixin {
+  margin-top: 0.44rem;
+  position: relative;
+  /*a{
+		position: absolute;
+		top:0;
+		right: 0;
+		left: 0;
+		bottom:0;
+	}*/
+}
+
+.weixin .row {
+  height: auto;
+  margin: 0;
+  padding: 0.07rem  0.2rem  0.07rem  0.1rem;
+  border-bottom: 0.01rem solid #ccc;
+}
+
+.weixin .zuo {
+  position: absolute;
+  float: left;
+  height: 0.63rem;
+  width: 0.6rem;
+  text-align: center;
+}
+
+.weixin .zuo img {
+  width: 100%;
+  height: 100%;
+}
+
+.weixin .zhong {
+  padding-left: 0.7rem;
+  padding-right: 0.28rem;
+  float: left;
+  height: 0.63rem;
+  width: auto;
+  font-size: 0.14rem;
+  padding-top: 0.07rem;
+}
+
+.weixin .zhong .info {
+  margin-top: 0.1rem;
+  color: #9A9A9A;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.weixin .you {
+  float: right;
+  height: 0.63rem;
+  width: auto;
+  position: relative;
+}
+
+.weixin .you .data {
+  color: #9A9A9A;
+}
+
+.weixin .you .tixing {
+  text-align: center;
+  position: absolute;
+  bottom: 0.01rem;
+  left: 0;
+  right: 0;
+}
+
+.weixin .you .tixing img {
+  width: 100%;
+  height: 100%;
+}
+
+/*发现*/
+.faxian {
+  background: #EBEBEB;
+  position: absolute;
+  top: 0.44rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.faxian ul {
+  width: 100%;
+  background: #fff;
+  margin-top: 0.2rem;
+}
+
+.faxian ul li {
+  margin-bottom: 0;
+  margin: 0 0.2rem;
+}
+
+.faxian ul li .tu {
+  float: left;
+  width: 0.25rem;
+  height: 0.46rem;
+  text-align: center;
+}
+
+.faxian ul li .tu img {
+  margin-top: 0.1rem;
+  width: 0.25rem;
+  height: 0.25rem;
+}
+
+.faxian ul li .pyq {
+  width: auto;
+  height: 0.46rem;
+  float: left;
+  line-height: 0.46rem;
+  margin-left: 0.2rem;
+  color: #6B6B6B;
+}
+
+.faxian .pengyouquan2 .row:nth-child(1) {
+  border-bottom: 0.01rem solid #ccc;
+}
+
+/*我*/
+.wo {
+  background: #EBEBEB;
+  position: absolute;
+  top: 0.44rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  /*shang*/
+}
+
+.wo ul {
+  width: 100%;
+  background: #fff;
+  margin-top: 0.2rem;
+}
+
+.wo ul li {
+  margin-bottom: 0;
+  margin: 0 0.2rem;
+}
+
+.wo ul li .tu {
+  float: left;
+  width: 0.25rem;
+  height: 0.46rem;
+  text-align: center;
+}
+
+.wo ul li .tu img {
+  margin-top: 0.1rem;
+  width: 0.25rem;
+  height: 0.25rem;
+}
+
+.wo ul li .pyq {
+  width: auto;
+  height: 0.46rem;
+  float: left;
+  line-height: 0.46rem;
+  margin-left: 0.2rem;
+  color: #6B6B6B;
+}
+
+.wo .xia .row:nth-child(1) {
+  border-bottom: 0.01rem solid #ccc;
+}
+
+.wo .shang {
+  height: auto;
+  margin: 0;
+  padding: 0.07rem  0.2rem  0.07rem  0.1rem;
+}
+
+.wo .zuo {
+  position: absolute;
+  float: left;
+  height: 0.63rem;
+  width: 0.6rem;
+  text-align: center;
+  margin-left: 0;
+}
+
+.wo .zuo img {
+  width: 0.63rem;
+  height: 0.63rem;
+}
+
+.wo .zhong {
+  padding-left: 0.5rem;
+  padding-right: 0.28rem;
+  float: left;
+  height: 0.63rem;
+  width: auto;
+  font-size: 0.14rem;
+  padding-top: 0.07rem;
+}
+
+.wo .zhong .info {
+  margin-top: 0.1rem;
+  color: #9A9A9A;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.wo .you {
+  float: right;
+  height: 0.63rem;
+  line-height: 0.63rem;
+  width: auto;
+  position: relative;
+}
+
+.wo .you .data {
+  color: #9A9A9A;
+}
+
+.wo .you .tixing {
+  text-align: center;
+  position: absolute;
+  bottom: 0.01rem;
+  left: 0;
+  right: 0;
+}
+
+.wo .you .tixing img {
+  width: 100%;
+  height: 100%;
+}
+
+/*朋友圈 PYQ-dt.html*/
+.dt {
+  margin-top: 0.44rem;
+  padding: 0 0.2rem;
+}
+
+.dt .zuo {
+  margin-top: 0.3rem;
+  float: left;
+}
+
+.dt .you {
+  margin-top: 0.3rem;
+  margin-left: 0.2rem;
+  width: 2.56rem;
+  float: left;
+}
+
+.dt .you .card-title {
+  color: #8C9AB6;
+}
+
+.dt .you .card {
+  margin: 0.2rem 0 1rem 0;
+}
+
+.dt .you .row {
+  padding: 0;
+}
+
+.dt .you .row .col {
+  padding: 0;
+}
+
+.dt .you .row img {
+  width: 100%;
+  height: 100%;
+}
+
+/*通讯录*/
+.tongxunlu {
+  margin-top: 0.44rem;
+  position: relative;
+}
+
+.tongxunlu .shang {
+  padding: 0 0.2rem;
+}
+
+.tongxunlu .shang .row {
+  margin-bottom: 0;
+  height: 0.5rem;
+  line-height: 0.5rem;
+}
+
+.tongxunlu .shang li {
+  border-bottom: 1px solid #ccc;
+  height: 0.5rem;
+}
+
+.tongxunlu .shang li .zuo {
+  float: left;
+  height: 0.5rem;
+}
+
+.tongxunlu .shang li .zuo img {
+  margin-top: 0.07rem;
+}
+
+.tongxunlu .shang li .you {
+  float: left;
+  margin-left: 0.1rem;
+  height: 0.5rem;
+}
+
+.tongxunlu .shang li .you p {
+  margin: 0;
+}
+
+.tongxunlu .shang li:nth-child(4) {
+  border-bottom: 0;
+}
+
+.tongxunlu .xia .group {
+  color: #B1B1B1;
+  border-bottom: 1px solid #ccc;
+}
+
+.tongxunlu .xia .group span {
+  padding-left: 0.2rem;
+  background: #EBEBEB;
+  display: block;
+  width: 100%;
+}
+
+.tongxunlu .xia .group .row {
+  margin-bottom: 0;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  padding-left: 0.2rem;
+}
+
+.tongxunlu .xia .group .row li {
+  border-bottom: 1px solid #ccc;
+  height: 0.5rem;
+  /*.zuo{
+						float: left;
+						height: 0.5rem;
+						img{
+							margin-top:0.07rem;
+						}
+					}
+					.you{
+						float: right;
+						margin-left: 0.1rem;
+						height: 0.5rem;
+						p{
+							margin:0;
+
+						}
+					}*/
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="weixinapp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+<meta name="viewport" content="width=device-width">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="application-name" content="微信">
+  <!-- <link rel="icon" sizes="192x192" href="image/logo.png"> -->
+  <title>weixin</title>
+  <link href="http://cdn.bootcss.com/materialize/0.97.6/css/materialize.css" rel="stylesheet"> 
+  <link rel="stylesheet" href="./css/index.css">
+
+  <script src="http://cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+  <script src="angular.js"></script>
+  <script src="angular-route.js"></script>
+  <script src="angular-animate.js"></script>
+  <script src="angular-touch.js"></script>
+  <script src="./js/index.js"></script>
+</head>
+
+<body ng-controller="indexCtrl">
+
+<wx-title></wx-title>
+<ng-view></ng-view>
+<wx-footer></wx-footer>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "weixin",
+  "authors": [
+    "董小敏 <1344091359@qq.com>"
+  ],
+  "description": "weixinyd",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "bootstrap": "^3.3.6",
+    "touch.code.baidu.com": "Clouda-team/touch.code.baidu.com",
+    "Swiper": "swiper#^3.3.1"
+  }
+}
